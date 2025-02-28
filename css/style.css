@@ -57,18 +57,20 @@ body.dark {
   --text-color: #fff;
 }
 
+.dark-light {
+  position: absolute;
+  right: 13%;
+}
+
 .dark-light i {
   position: relative;
   color: white;
   font-size: 22px;
   cursor: pointer;
   transition: all 0.3s ease;
-  padding-left: 20px;
 }
 
-.dark-light i:first-child {
-  padding-left: 0;
-}
+
 
 .dark-light i.sun {
   opacity: 0;
