@@ -28,8 +28,11 @@ faqs.forEach((tab,index)=>{
 
 // faqs[0].addEventListener('click',function(){});
 
+// dark mode 
 const body = document.querySelector("body"),
-      modeToggle = document.querySelector(".dark-light")
+      modeToggle = document.querySelector(".dark-light"),
+      heroBg = document.querySelector(".person__person-bg"),
+      footerBg = document.querySelector(".footer__footer-bg-main-img");
 
       let getMode = localStorage.getItem("mode");
       if(getMode && getMode === "dark-mode"){
@@ -39,14 +42,21 @@ const body = document.querySelector("body"),
 // js code to toggle dark and light mode
   modeToggle.addEventListener("click" , () =>{
     modeToggle.classList.toggle("active");
+    
     body.classList.toggle("dark");
-
+    document.body.classList.toggle("no-bg");
     // js code to keep user selected mode even page refresh or file reopen
     if(!body.classList.contains("dark")){
         localStorage.setItem("mode" , "light-mode");
+        heroBg.classList.add("no-bg");
+    footerBg.classList.add("no-bg");
+        
     }else{
         localStorage.setItem("mode" , "dark-mode");
+        heroBg.classList.remove("no-bg");
+        footerBg.classList.remove("no-bg");
     }
+    
   });
 
 $(document).ready(function(){
