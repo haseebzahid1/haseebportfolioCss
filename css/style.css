@@ -527,6 +527,7 @@ body.dark {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 
 
@@ -2222,8 +2223,8 @@ https://ant.design/components/progress/
 }
 
 .contact__contact-row {
-  padding-top: 97.3px;
-  padding-bottom: 150px;
+  /* padding-top: 97.3px; */
+  /* padding-bottom: 150px; */
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -2330,7 +2331,7 @@ https://ant.design/components/progress/
 .contact__contact-img {
   padding-left: 30px;
   width: 100%;
-  min-height: 243px;
+  height: 370px;
 
 }
 
